@@ -1,3 +1,98 @@
+:root {
+  --main-color: yellow;
+}
+
 body {
-  background-color: coral;
+  font-family: 'Comfortaa', cursive;
+  background-color: var(--main-color);
+  margin: 0;
+  color: black;
+}
+
+.main {
+  display: flex;
+}
+
+.main-head {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-head__title {
+  text-align: center;
+}
+
+.main-result {
+  background-image: url(./weather.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(200%);
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-result-getting {
+  display: flex;
+}
+
+.main-result-getting__input {
+  height: 40px;
+  border: none;
+  font-size: large;
+  border: var(--main-color) solid 1px;
+  width: 225px;
+}
+
+.main-result-getting__input:focus {
+  outline: var(--main-color) solid 2px;
+}
+
+.main-result-getting__button {
+  background-color: var(--main-color);
+  border: none;
+  font-size: large;
+}
+
+.main-result-getting__button:hover {
+  background-color: black;
+  color: var(--main-color);
+}
+
+.main-result__temp {
+  height: 70px;
+  width: 70px;
+  background-color: var(--main-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto 15px auto;
+}
+
+.main-result__temp>img {
+  height: 50px;
+}
+
+.main-result__subTitle {
+  color: var(--main-color);
+}
+
+.main-result__text {
+  color: aliceblue;
+}
+
+.main-result__text>a {
+  color: unset;
+  text-decoration: none;
+}
+
+.main-result__text>a:hover {
+  color: var(--main-color);
 }
