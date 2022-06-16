@@ -113,8 +113,12 @@ body {
 .main-result__text>a {
   color: unset;
   text-decoration: none;
+  color: var(--main-color);
 }
 
 .main-result__text>a:hover {
-  color: var(--main-color);
+  transition: all 2s ease;
+  color: black;
+  background-color: var(--main-color);
+  border-radius: 15px;
 }
