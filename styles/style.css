@@ -114,11 +114,12 @@ body {
   color: unset;
   text-decoration: none;
   color: var(--main-color);
+  border-radius: 15px;
+  transition: background 2s ease, color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .main-result__text>a:hover {
-  transition: all 2s ease;
   color: black;
   background-color: var(--main-color);
-  border-radius: 15px;
+  transition: background 2s ease, color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
