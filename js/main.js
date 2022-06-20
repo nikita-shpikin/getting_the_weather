@@ -27,19 +27,19 @@ getTempCity = () => {
   function getResult(temp, city, weather) {
     switch (weather) {
       case 'Rain':
-        imageResult.setAttribute('src', '../assets/rain.svg');
+        imageResult.setAttribute('src', './assets/rain.svg');
         break;
       case 'Clouds':
-        imageResult.setAttribute('src', '../assets/clouds.svg');
+        imageResult.setAttribute('src', './assets/clouds.svg');
         break;
       case 'Clear':
-        imageResult.setAttribute('src', '../assets/sun.svg');
+        imageResult.setAttribute('src', './assets/sun.svg');
         break;
       case 'Snow':
-        imageResult.setAttribute('src', '../assets/snow.svg');
+        imageResult.setAttribute('src', './assets/snow.svg');
         break;
       default:
-        imageResult.setAttribute('src', '../assets/smiley.svg');
+        imageResult.setAttribute('src', './assets/smiley.svg');
     }
 
     let tempGet = `${Math.round(temp)}`;
