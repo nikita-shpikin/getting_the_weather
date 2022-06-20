@@ -25,8 +25,6 @@ getTempCity = () => {
   }
 
   function getResult(temp, city, weather) {
-    console.log(weather);
-
     switch (weather) {
       case 'Rain':
         imageResult.setAttribute('src', '../assets/rain.svg');
